@@ -3,6 +3,9 @@
 
 Chrome-like context menu
 
+## Demo
+[https://qinshou.github.io/right-click-trick/example/](https://qinshou.github.io/right-click-trick/example/)
+
 ## Usage
 ```
 rightClickTrick(menus)
@@ -11,20 +14,21 @@ rightClickTrick(menus)
 ### menus[]
 Type: `Array-Object`
 
-- title
+#### title
 Type: `String`
 
-- disabled
+#### disabled
 Type: `Boolean`
 Disable the item
 
-- onClick
+#### onClick
 Type: `Function`
 
-- isDivider
+#### isDivider
 Type: `Boolean`
 Show only split lines
 
 # TODO
 - i18n support
 - selection
+- animation

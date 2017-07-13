@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Right-Click-Trick</title>
 </head>
 <body>
-<h1>Hello</h1>
+<h1>Right-Click-Trick</h1>
+<p><a class="github-button" href="https://github.com/qinshou/right-click-trick" data-icon="octicon-star" data-show-count="true" aria-label="Star qinshou/right-click-trick on GitHub">Star</a></p>
 <p>Try Right-Click</p>
+
+
 <script src="../src/index.js"></script>
 <script>
   var contextMenu = [
@@ -45,7 +48,7 @@
       title: '打印',
       disabled: false,
       onClick: function () {
-        alert('打印')
+        window.print()
       }
     },
     {
@@ -62,19 +65,20 @@
       title: '显示网页源代码',
       disabled: false,
       onClick: function () {
-        window.location.href  = 'view-source:' + location.href
+        window.location.href = 'view-source:' + location.href
       }
     },
     {
       title: '检查',
       disabled: false,
       onClick: function () {
-
+        alert('没有，快滚')
       }
     }
   ]
 
   rightClickTrick(contextMenu)
 </script>
+<script async defer src="//buttons.github.io/buttons.js"></script>
 </body>
 </html>

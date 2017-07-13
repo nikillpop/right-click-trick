@@ -126,8 +126,8 @@ window.rightClickTrick = function (list) {
     }
 
     var i = e.target.dataset.index
-    list[i].onClick()
     toggleContextMenu()
+    list[i].onClick()
   }, false)
 
 }
