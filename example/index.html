@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello</h1>
+<p>Try Right-Click</p>
+<script src="../src/index.js"></script>
+<script>
+  var contextMenu = [
+    {
+      title: '返回',
+      disabled: true,
+      onClick: function () {
+        history.go(-1)
+      }
+    },
+    {
+      title: '前进',
+      disabled: true,
+      onClick: function () {
+        history.forward()
+      }
+    },
+    {
+      title: '重新加载',
+      disabled: false,
+      onClick: function () {
+        window.location.reload()
+      }
+    },
+    {
+      isDivider: true
+    },
+    {
+      title: '储存为',
+      disabled: false,
+      onClick: function () {
+        alert('储存为')
+      }
+    },
+    {
+      title: '打印',
+      disabled: false,
+      onClick: function () {
+        alert('打印')
+      }
+    },
+    {
+      title: '翻译中文（简体）',
+      disabled: false,
+      onClick: function () {
+        alert('翻译')
+      }
+    },
+    {
+      isDivider: true
+    },
+    {
+      title: '显示网页源代码',
+      disabled: false,
+      onClick: function () {
+        window.location.href  = 'view-source:' + location.href
+      }
+    },
+    {
+      title: '检查',
+      disabled: false,
+      onClick: function () {
+
+      }
+    }
+  ]
+
+  rightClickTrick(contextMenu)
+</script>
+</body>
+</html>
